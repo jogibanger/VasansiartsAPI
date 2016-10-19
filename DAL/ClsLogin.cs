@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BAL;
+using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +10,14 @@ namespace DAL
 {
     public class ClsLogin
     {
-        public string Validate()
+        public string ValidateUsers(Login login)
         {
+             ComonFuction.Encrypt(login.userName,"Vasansiarts");
+
+             ComonFuction.Encrypt(login.password, "Vasansiarts");
+           
             
-            return "sucess";
+             return "sucess";
         }
     }
 }

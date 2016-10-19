@@ -31,7 +31,7 @@ namespace VasansiartsAPI.Controllers
         //   [Route("login/ValidateUsers")]
         // POST Login/values
 
-        public HttpResponseMessage Post(BAL.BALLogin login)
+        public HttpResponseMessage Post(Login login)
         {
             if (login != null)
             {
@@ -39,7 +39,7 @@ namespace VasansiartsAPI.Controllers
                   && ComonFuction.ValidateStringValue(login.password))
                 {
                     ClsLogin Obj = new ClsLogin();
-                    string SK = Obj.Validate();
+                    string SK = Obj.ValidateUsers(login);
                     return Request.CreateErrorResponse(HttpStatusCode.OK, SK );
                 }
                 else
