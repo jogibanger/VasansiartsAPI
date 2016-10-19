@@ -1,0 +1,14 @@
+D:\Projects\VasansiartsAPI\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\DAL.dll.config
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\DAL.dll
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\DAL.pdb
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\BAL.dll
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\Common.dll
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\EntityFramework.dll
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\BAL.pdb
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\Common.pdb
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\EntityFramework.xml
+D:\Projects\VasansiartsAPI\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\VasansiartsAPI\DAL\obj\Debug\DAL.dll
+D:\Projects\VasansiartsAPI\DAL\obj\Debug\DAL.pdb

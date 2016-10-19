@@ -1,0 +1,4 @@
+D:\Projects\VasansiartsAPI\Common\bin\Debug\Common.pdb
+D:\Projects\VasansiartsAPI\Common\obj\Debug\Common.dll
+D:\Projects\VasansiartsAPI\Common\obj\Debug\Common.pdb
+D:\Projects\VasansiartsAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
