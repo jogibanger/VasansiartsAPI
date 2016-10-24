@@ -8,6 +8,7 @@ namespace Common
 {
    public class CommonMessage
     {
+     
         private static string PleaseTryAgain = "Please Try Again Or Contact To Admin";
         public static string UserNamePasswordWrong = string.Format("User Name and Password Wrong {0}", PleaseTryAgain);
         public static string UserNameWrong = string.Format("User Name Wrong {0}", PleaseTryAgain);

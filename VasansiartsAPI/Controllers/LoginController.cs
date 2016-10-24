@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Http;
-using System.Web.Mvc;
 using BAL;
 using Common;
 using System.Net.Http;
 using System.Net;
 using DAL;
+using System;
+
 
 namespace VasansiartsAPI.Controllers
 {
@@ -33,26 +31,33 @@ namespace VasansiartsAPI.Controllers
 
         public HttpResponseMessage Post(Login login)
         {
-            if (login != null)
+            try
             {
-                if (ComonFuction.ValidateStringValue(login.userName)
-                  && ComonFuction.ValidateStringValue(login.password))
-                {
-                    ClsLogin Obj = new ClsLogin();
-                    string SK = Obj.ValidateUsers(login);
-                    return Request.CreateErrorResponse(HttpStatusCode.OK, SK );
-                }
-                else
-                {
-                    return Request.CreateErrorResponse(HttpStatusCode.OK, CommonMessage.EmptyNameAndPassword);
-                }
-            }
-            else
+                //if (login != null)
+                //{
+                //    if (ComonFuction.ValidateStringValue(login.userName)
+                //      && ComonFuction.ValidateStringValue(login.password))
+                //    {
+                //        ClsLogin Obj = new ClsLogin();
+                //        string IsValidate = Obj.ValidateUsers(login).ToString();
+                //        return Request.CreateErrorResponse(HttpStatusCode.OK, IsValidate);
+                //    }
+                //    else
+                //    {
+                //        return Request.CreateErrorResponse(HttpStatusCode.OK, CommonMessage.EmptyNameAndPassword);
+                //    }
+                //}
+                //else
+                string MM = "asdfasdf";
+                int i = Convert.ToInt32(MM);
                 return Request.CreateErrorResponse(HttpStatusCode.OK, CommonMessage.UserNameWrong);
-           
-
-
-
+                
+            }
+            catch (System.Exception ex)
+            {
+                HandleApplicationException.WriteException(ex);
+                throw ex;
+            }
         }
 
         // PUT Login/values/5

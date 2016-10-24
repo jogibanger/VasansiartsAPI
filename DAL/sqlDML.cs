@@ -12,26 +12,27 @@ namespace DAL
     public class sqlDML
     {
         private SqlDataAdapter myAdapter;
-        private SqlConnection conn;
+        private static SqlConnection conn;
         private string DataBaseName = string.Empty;
         private string UserID = string.Empty;
         private string Password = string.Empty;
         private string ServerName = string.Empty;
 
         // Initialise Connection
-        public sqlDML()
+        public static sqlDML()
         {
             try
             {
 
                 myAdapter = new SqlDataAdapter();
-                ReadINIFile objReadINIFile = new ReadINIFile(@"DL_SQL_DB.ini");
-                DataBaseName = objReadINIFile.GetSetting("DataBaseName", "DataBaseName");
-                UserID = objReadINIFile.GetSetting("UserName", "UserName");
-                Password = objReadINIFile.GetSetting("Password", "Password");
-                ServerName = objReadINIFile.GetSetting("ServerName", "ServerName");
-                string TempConnectionstring = @"Data Source=" + ServerName + ";Database=" + DataBaseName + ";User ID=" + UserID.ToLower() + ";Password=" + Password.ToLower() + ";";
-                conn = new SqlConnection(TempConnectionstring);
+                //ReadINIFile objReadINIFile = new ReadINIFile(@"DL_SQL_DB.ini");
+                //DataBaseName = objReadINIFile.GetSetting("DataBaseName", "DataBaseName");
+                //UserID = objReadINIFile.GetSetting("UserName", "UserName");
+                //Password = objReadINIFile.GetSetting("Password", "Password");
+                //ServerName = objReadINIFile.GetSetting("ServerName", "ServerName");
+                ////string TempConnectionstring = @"Data Source=" + ServerName + ";Database=" + DataBaseName + ";User ID=" + UserID.ToLower() + ";Password=" + Password.ToLower() + ";";
+
+                conn = new SqlConnection("Data Source=43.242.124.207;Initial Catalog=vasansiarts;User ID=misapp2016;Password=Zg2%6*j@");
             }
             catch (Exception)
             {
@@ -42,7 +43,7 @@ namespace DAL
         }
 
         // Open Database Connection if Closed or Broken
-        private SqlConnection openConnection()
+        private static SqlConnection openConnection()
         {
             try
             {
@@ -62,7 +63,7 @@ namespace DAL
         }
 
         // Close Connection....
-        private SqlConnection CloseConnection()
+        private static SqlConnection CloseConnection()
         {
             try
             {
@@ -82,7 +83,7 @@ namespace DAL
         }
 
         // Insert data through Text/Procedure with sql parameters
-        public int ExecuteNonquery(string query, SqlParameter[] sqlParameter, CommandType commandType)
+        public static int ExecuteNonquery(string query, SqlParameter[] sqlParameter, CommandType commandType)
         {
             int TempValue = 0;
             SqlCommand sqlCommand = new SqlCommand();
@@ -110,7 +111,7 @@ namespace DAL
         }
 
         // To get Single Record
-        public string GetSingleRecord(string query, SqlParameter[] sqlParameter, CommandType commandType)
+        public static string GetSingleRecord(string query, SqlParameter[] sqlParameter, CommandType commandType)
         {
             string TempValue = string.Empty;
             SqlCommand sqlCommand = new SqlCommand();
@@ -263,8 +264,6 @@ namespace DAL
             return dt;
 
         }
-
-
 
     }
 }

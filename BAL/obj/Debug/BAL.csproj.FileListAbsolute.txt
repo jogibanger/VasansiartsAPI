@@ -2,3 +2,8 @@ D:\Projects\VasansiartsAPI\BAL\bin\Debug\BAL.dll
 D:\Projects\VasansiartsAPI\BAL\bin\Debug\BAL.pdb
 D:\Projects\VasansiartsAPI\BAL\obj\Debug\BAL.dll
 D:\Projects\VasansiartsAPI\BAL\obj\Debug\BAL.pdb
+F:\VasansiartsAPI-master\BAL\bin\Debug\BAL.dll
+F:\VasansiartsAPI-master\BAL\bin\Debug\BAL.pdb
+F:\VasansiartsAPI-master\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+F:\VasansiartsAPI-master\BAL\obj\Debug\BAL.dll
+F:\VasansiartsAPI-master\BAL\obj\Debug\BAL.pdb

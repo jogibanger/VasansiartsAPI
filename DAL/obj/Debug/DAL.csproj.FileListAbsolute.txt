@@ -12,3 +12,17 @@ D:\Projects\VasansiartsAPI\DAL\bin\Debug\EntityFramework.xml
 D:\Projects\VasansiartsAPI\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projects\VasansiartsAPI\DAL\obj\Debug\DAL.dll
 D:\Projects\VasansiartsAPI\DAL\obj\Debug\DAL.pdb
+F:\VasansiartsAPI-master\DAL\bin\Debug\DAL.dll.config
+F:\VasansiartsAPI-master\DAL\bin\Debug\DAL.dll
+F:\VasansiartsAPI-master\DAL\bin\Debug\DAL.pdb
+F:\VasansiartsAPI-master\DAL\bin\Debug\BAL.dll
+F:\VasansiartsAPI-master\DAL\bin\Debug\Common.dll
+F:\VasansiartsAPI-master\DAL\bin\Debug\EntityFramework.dll
+F:\VasansiartsAPI-master\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\VasansiartsAPI-master\DAL\bin\Debug\BAL.pdb
+F:\VasansiartsAPI-master\DAL\bin\Debug\Common.pdb
+F:\VasansiartsAPI-master\DAL\bin\Debug\EntityFramework.xml
+F:\VasansiartsAPI-master\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\VasansiartsAPI-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\VasansiartsAPI-master\DAL\obj\Debug\DAL.dll
+F:\VasansiartsAPI-master\DAL\obj\Debug\DAL.pdb

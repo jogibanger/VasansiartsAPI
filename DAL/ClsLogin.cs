@@ -2,22 +2,36 @@
 using Common;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace DAL
 {
-    public class ClsLogin
+    public class ClsLogin:sqlDML
     {
-        public string ValidateUsers(Login login)
+        public CommonProperty.IsSuccess ValidateUsers(Login login)
         {
-             ComonFuction.Encrypt(login.userName,"Vasansiarts");
+            try
+            {
+                string StoreProcedureName = "CHECK_USER_CREDENTIALS";
 
-             ComonFuction.Encrypt(login.password, "Vasansiarts");
-           
-            
-             return "sucess";
+                SqlParameter[] sqlParameter = {
+                    new SqlParameter("USERNAME",login.userName),
+                    new SqlParameter("PASSWORD",login.password),
+                };
+               ClsLogin.GetSingleRecord(StoreProcedureName, sqlParameter, CommandType.StoredProcedure);
+
+
+                return CommonProperty.IsSuccess.Success;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
     }
 }
